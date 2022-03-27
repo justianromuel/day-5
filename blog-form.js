@@ -63,7 +63,7 @@ function durationBlog(startDate, endDate) {
     let start = new Date(startDate);
     let end = new Date(endDate);
 
-    let duration = end.getTime() - start.getTime();
+    let duration = end.getTime() - start.getTime(); // getTime untuk mengambil waktu dalam milisecond
 
     let miliseconds = 1000;     // 1000 milidetik dalam 1 detik
     let secondInHours = 3600;   // 3600 detik dalam 1 jam
@@ -84,9 +84,8 @@ function durationBlog(startDate, endDate) {
     }
 }
 
-// Function untuk merender card blog
-function renderBlog() {
-    document.getElementById("blog").innerHTML = `
+// Data dummy first card blog
+let dummyBlog = `
     <div class="card-blog1">
         <img src="assets/PewDiePie.jpg" class="image">
         <div class="card-blog-content">
@@ -110,7 +109,12 @@ function renderBlog() {
             <button class="button-edit">edit</button>
             <button class="button-delete">delete</button>
         </div>
-    </div>`;
+    </div>
+`
+
+// Function untuk merender card blog
+function renderBlog() {
+    document.getElementById("blog").innerHTML = dummyBlog;
 
     for (let i = 0; i < blog.length; i++) {
         document.getElementById("blog").innerHTML += `
