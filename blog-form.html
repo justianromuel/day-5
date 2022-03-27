@@ -1,0 +1,147 @@
+<html>
+
+<head>
+    <title>My Project</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="blog-form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <nav>
+        <div class="nav-left">
+            <img src="assets/logo-dumbways.png" alt="logo">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="blog-form.html" class="my-project">My Project</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="contact.html">Contact Me</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Blog Form Start -->
+    <form onsubmit="addBlog(event)">
+        <h1>ADD MY PROJECT</h1>
+
+        <!-- Project Name Start -->
+        <div>
+            <label for="input-project-name">Project Name</label>
+            <input type="text" id="input-project-name" class="input">
+        </div>
+        <!-- Project Name End -->
+
+        <!-- Date Start -->
+        <div class="date">
+            <div class="date-left">
+                <label for="input-start-date">Start Date</label>
+                <input type="date" id="input-start-date" class="input">
+            </div>
+            <div class="date-end">
+                <label for="input-end-date">End Date</label>
+                <input type="date" id="input-end-date" class="input">
+            </div>
+        </div>
+        <!-- Date End -->
+
+        <!-- Description Start -->
+        <div>
+            <label for="input-description">Description</label>
+            <textarea id="input-description"></textarea>
+        </div>
+        <!-- Description End -->
+
+        <!-- Technologies Start -->
+        <div>
+            <label>Technologies</label>
+            <div class="checkbox">
+                <div class="checkbox-left">
+                    <input type="checkbox" id="reactjs" value="fa-brands fa-react">
+                    <span>React Js</span>
+                </div>
+                <div class="checkbox-right">
+                    <input type="checkbox" id="nodejs" value="fa-brands fa-node">
+                    <span>Node Js</span>
+                </div>
+            </div>
+            <div class="checkbox">
+                <div class="checkbox-left">
+                    <input type="checkbox" id="javascript" value="fa-brands fa-js">
+                    <span>JavaScript</span>
+                </div>
+                <div class="checkbox-right">
+                    <input type="checkbox" id="java" value="fa-brands fa-java">
+                    <span>Java</span>
+                </div>
+            </div>
+        </div>
+        <!-- Technologies End -->
+
+        <!-- Upload Image Start -->
+        <div class="upload-image">
+            <label>Upload Image</label>
+            <div class="input-image-group">
+                <label for="input-image">
+                    <p>Attach File</p>
+                    <img src="assets/attach-icon.svg" alt="attach-icon">
+                </label>
+                <input type="file" id="input-image" hidden>
+            </div>
+        </div>
+        <!-- Upload Image End -->
+
+        <!-- Submit Start -->
+        <div class="button">
+            <button>Submit</button>
+        </div>
+        <!-- Submit End -->
+
+    </form>
+    <!-- Blog Form End -->
+
+    <!-- Blog Post Start -->
+    <div class="blogPost">
+        <h1>My Project</h1>
+        <div id="blog" class="card-blog">
+            <div class="card-blog1">
+                <img src="assets/PewDiePie.jpg" class="image">
+                <div class="card-blog-content">
+                    <a href="blog-detail.html">
+                        <h2>Dumbways Mobile App - 2021</h2>
+                    </a>
+                    <p style="color: #726C6C; font-size: 14px;">durasi : 3 bulan</p>
+                    <p>
+                        App that used for dumbways student, it was deployed and can downloaded on playstore. Happy
+                        download
+                    </p>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-react"></i>
+                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-node"></i>
+                    <i class="fa-brands fa-java"></i>
+                </div>
+                <br>
+                <div class="button-blog-card">
+                    <button class="button-edit">edit</button>
+                    <button class="button-delete">delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog Post End -->
+
+    <script src="blog-form.js"></script>
+</body>
+
+</html>

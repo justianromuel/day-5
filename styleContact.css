@@ -1,0 +1,115 @@
+body{
+    margin: 0px;
+    background-color: E3E7EB;
+}
+
+/* Navbar Style Start */
+nav{
+    background-color: F4F3F3;
+    display: flex;
+    height: 7vh;
+    margin-top: 5px;
+}
+
+.nav-left{
+    display: flex;
+    flex: 50%;
+    padding-left: 70px;
+    align-items: center;
+}
+
+.nav-left img{
+    width: 40px;
+    height: 30px;
+}
+
+.nav-left li{
+    display: inline;
+}
+
+.nav-left li a{
+    text-decoration: none;
+    color: #000;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.nav-right{
+    display: flex;
+    flex: 50%;
+    padding-right: 70px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-right a{
+    background-color: rgba(0, 0, 0, 0.605);
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/* Navbar Style End */
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+}
+
+form{
+    width: 400px;
+    margin: 50px auto;
+}
+
+label{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input{
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .25);
+}
+
+select{
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .25);
+}
+
+textarea{
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    height: 100px;
+    resize: vertical;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .25);
+}
+
+button{
+    margin-top: 10px;
+    margin-left: 300px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 30px;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+}

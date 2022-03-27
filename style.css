@@ -1,0 +1,142 @@
+body{
+    margin: 0px;
+    background-color: E3E7EB;
+}
+
+/* Navbar Style Start */
+nav{
+    background-color: F4F3F3;
+    display: flex;
+    height: 7vh;
+    margin-top: 5px;
+}
+
+.nav-left{
+    display: flex;
+    flex: 50%;
+    padding-left: 70px;
+    align-items: center;
+}
+
+.nav-left img{
+    width: 40px;
+    height: 30px;
+}
+
+.nav-left li{
+    display: inline;
+}
+
+.nav-left li a{
+    text-decoration: none;
+    color: #000;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.home{
+    font-weight: 900;
+}
+
+.nav-right{
+    display: flex;
+    flex: 50%;
+    padding-right: 70px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-right a{
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/* Navbar Style End */
+
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 91%;
+    margin: 100px auto;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, .25);
+}
+
+section{
+    display: flex;
+}
+
+.section-left{
+    flex: 60%;
+    padding: 100px 0 0 70px;
+    text-align: justify;
+}
+
+.section-left p{
+    width: 100%;
+}
+
+.contact{
+    display: inline;
+    text-decoration: none;
+    background-color: black;
+    width: 60px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.cv{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.logo{
+    margin-right: 10px;
+    text-align: left;
+}
+
+.logo a i{
+    width: 25px;
+    height: 25px;
+    margin: 75px 20px 0px 0px;
+    color: black;
+}
+
+.section-right{
+    flex: 40%;
+    padding: 50px 0 50px 0;
+}
+
+.card{
+    background-color: white;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, .25);
+    width: 350px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0px auto;
+    padding-bottom: 5px;
+    border: none;;
+}
+
+.card img{
+    width: 350px;
+    height: 400px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.card h1{
+    margin: 5px auto 0 auto;
+}
+
+.card p{
+    font-size: 14px;
+    margin: 0 auto 5px auto;
+}
